@@ -5,9 +5,10 @@ Created on Sun Apr 25 03:53:12 2021
 
 @author: macbookpro
 """
+from typing import List
 
 class Solution:
-    def twoSum(self, nums , target: int) :
+    def twoSum(self ,nums: List[int], target: int) -> List[int]:
         
         mydict = {}
         
