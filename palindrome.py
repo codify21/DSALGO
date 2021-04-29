@@ -5,7 +5,7 @@ Created on Sun Apr 25 21:30:04 2021
 
 @author: macbookpro
 """
-
+#https://leetcode.com/problems/palindrome-number/
 class Solution:
     # def isPalindrome(self, x: int) -> bool:
     #     r,num,y=0,0,0

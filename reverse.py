@@ -5,6 +5,7 @@ Created on Sun Apr 25 19:41:38 2021
 
 @author: macbookpro
 """
+# https://leetcode.com/problems/reverse-integer/
 
 class Solution:
     def reverse(self, x: int) -> int:
