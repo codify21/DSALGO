@@ -5,36 +5,20 @@ Created on Fri May 21 15:59:47 2021
 
 @author: macbookpro
 """
-# def formatted(strArr):
-    
-#     strArr=strArr[0]
-#     decimal=strArr.split('.')
-#     if len(decimal)>2:
-#         return False
-#     number = decimal[:1]
-#     number = number[0].split(',')
-#     for i in range(1,len(number)):
-#         if len(number[i])==3:
-#             continue
-#         else:
-#             return False
-#     if len(number[0]) in [1,2,3]:
-#         return True
-# strArr=["256,700.00034"]
-# print(formatted(strArr))
+# TO IDENTIFY THE CORRECT ORDER OF DECIMAL AND POINT IN A NUMBER PASSED AS A STRING
 
 def FormattedNumber(strArr):
   c=1
 
   strArr=strArr[0]
-  decimal=strArr.split('.')
+  decimal=strArr.split('.')# first splitting by '.' to get count of values
   if len(decimal)>2:
     print(0)
     return False
     
   number = decimal[:1]
-  number = number[0].split(',')
-  for i in range(1,len(number)):
+  number = number[0].split(',')# then splitting by '.' to get count of values
+  for i in range(1,len(number)):#looping except the 1st number to check for their length
     if len(number[i])==3:
       continue
     else:
