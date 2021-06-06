@@ -22,7 +22,7 @@ class Solution:
             if c in parens:
                 stack.append(c)
             
-            elif(not stack):#  "[{}()]}()"--- IndexError: pop from empty list
+            elif(not stack):#  "[{}()]}()"--- IndexError: pop from empty list -[stack empty]
                 return False
             else:
                d= parens[stack.pop()]
