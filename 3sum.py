@@ -14,7 +14,7 @@ class Solution:
         triplets=[]
         nums.sort()
         for i in range(len(nums)-2):
-            if (i==0 or (i>0 and nums[i]!=nums[i-1])):
+            if (i==0 or (i>0 and nums[i]!=nums[i-1])):#for ignoring the duplicates
                 low=i+1
                 high =len(nums)-1
                 total = 0-nums[i]
@@ -23,9 +23,9 @@ class Solution:
                     if(nums[low]+nums[high]==total):
                         triplets.append([nums[i],nums[low],nums[high]])
                         
-                        while(low<high and nums[low]==nums[low+1]):
+                        while(low<high and nums[low]==nums[low+1]):#for ignoring the duplicates
                             low=low+1
-                        while(low<high and nums[high]==nums[high - 1]):
+                        while(low<high and nums[high]==nums[high - 1]):#for ignoring the duplicates
                             high=high - 1
                         low = low + 1
                         high = high - 1
