@@ -40,7 +40,7 @@ class hashTable:
             if self.keys[index] == key:
                 return self.values[index] 
         
-            #if there is achance of collision thats why we update index by +1
+            #if there is a chance of collision thats why we update index by +1
             index = (index+1)%self.size
             
     def all(self):

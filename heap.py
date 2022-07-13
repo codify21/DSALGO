@@ -30,6 +30,7 @@ class Heap:
             temp = self.heap[parentIndex]
             self.heap[parentIndex] = self.heap[index]
             self.heap[index] = temp
+            
             index = parentIndex
             parentIndex = int((index-1)/2)
             
@@ -47,11 +48,12 @@ class Heap:
             leftChild = 2*index+1
             rightChild  = 2*index+2
             
-            if leftChild<=upto:  # or if rightChild<upto:  Both will work
+            if leftChild<=upto:  # or if rightChild<upto:  Both will NOT work
                 childToSwap = None
                 
                 if rightChild>upto: # this case comes handy when after 1st reconstruction 
-                #there is still need for more reconstruction
+                #there is still need for more reconstruction and we need more rotation
+                #otherwise it act as a good break statement
                     childToSwap = leftChild
                 else:
                     if self.heap[leftChild]>self.heap[rightChild]:

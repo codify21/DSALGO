@@ -7,7 +7,7 @@ Created on Thu Apr 29 23:34:37 2021
 """
 # https://leetcode.com/problems/roman-to-integer/
 
-class Solution:
+# class Solution:
     # def romanToInt(self, s: str) -> int:
     #     answer = 0
     #     d = { 'I':[1 , 1 ], 'V':[2 , 5 ], 'X':[3 , 10], 'L':[4 , 50] ,\
@@ -20,25 +20,27 @@ class Solution:
 
     #     return answer+d[s[len(s)-1]][1]
     
-    class Solution:
-        def romanToInt(self, s: str) -> int:
-            d = {
-                'I': 1,
-                'V': 5,
-                'X': 10,
-                'L': 50,
-                'C': 100,
-                'D': 500,
-                'M': 1000
-            }
-            res = 0
-            for i in range(len(s)-1):
-                if d[s[i]] < d[s[i+1]]:
-                    res - = d[s[i]]
-                else:
-                    res += d[s[i]]
-            res += d[s[len(s)-1]]
-            return res
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        d = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000
+        }
+        res = 0
+        for i in range(len(s)-1):
+            if d[s[i]] < d[s[i+1]]:
+                res -= d[s[i]]
+            else:
+                res += d[s[i]]
+            print(res)
+        # print(res)
+        res += d[s[len(s)-1]]
+        return res
               
           
                  

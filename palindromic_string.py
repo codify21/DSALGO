@@ -38,32 +38,33 @@ class Solution:
     #       else:
     #             return s[0]
             
-    def longestPalindrome(self, s: str) -> str:#expand fom middle
-        if s=='' or len(s)<1:
-            return ''
-        start , end = 0,0
+    def longestPalindrome(self, s: str) -> str:
+        if (s=='' or len(s)<1):
+                return False
+            
+        res=''
+        reslen=0
         for i in range(len(s)):
-            len1 = self.expandfFromMiddle(s,i,i)
-            len2 = self.expandfFromMiddle(s,i,i+1)
-            print('len',len1,len2)
-            length = max(len1,len2)
-            if(length>end-start):
-                start = i - int((length-1)/2)
-                end = i+int(length/2)
-            print('start',start,end)
-        return s[start:end+1]
-       
-        
-       
-    def expandfFromMiddle(self,s,left,right):
-       
-        if (s=='' or left>right):
-            return False
-        while(left>=0 and right<len(s) and s[left]==s[right]):
-            left=left-1
-            right = right+1
-        print('l/r',left,right)
-        return right-left-1
+            #odd Length
+            left ,right=i,i
+            
+            while(left>=0 and right<len(s) and s[left]==s[right]):
+                if (right-left+1)>reslen:
+                    res = s[left:right+1]
+                    reslen = right-left+1
+                left=left-1
+                right = right+1
+                
+            #even Length
+            left ,right=i,i+1
+            
+            while(left>=0 and right<len(s) and s[left]==s[right]):
+                if (right-left+1)>reslen:
+                    res = s[left:right+1]
+                    reslen = right-left+1
+                left=left-1
+                right = right+1
+        return res
          
              
          
