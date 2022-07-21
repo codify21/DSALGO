@@ -47,37 +47,37 @@
 
 
 
-# special =['$','&','^','`']
-# data = "123$456&789^0&"
+special =['$','&','^','`']
+data = "123$456&789^0&"
 
-# def split(word):
-#     return [char for char in word]
+def split(word):
+    return [char for char in word]
      
-# # Driver code
-# word = 'geeks'
-# # print(split(word))
-# data=(split(data))
-# print(data)
-# print(len(data))
+# Driver code
+word = 'geeks'
+# print(split(word))
+data=(split(data))
+print(data)
+print(len(data))
 
-# for i in range(len(data)):
-#     for j in range(int(len(data)-1)/2,-1,-1):
-#         print(data[j])
-#         if data[i] in special:
-#             break
-#         if data[j] in special:
-#             continue
-#         if data[i] not in special and data[j] not in special:        
+for i in range(len(data)):
+    for j in range(int(len(data)-1)/2,-1,-1):
+        print(data[j])
+        if data[i] in special:
+            break
+        if data[j] in special:
+            continue
+        if data[i] not in special and data[j] not in special:        
             
             
             
-#             temp =data[i]
-#             data[j] =temp
-#             temp=data[i]
+            temp =data[i]
+            data[j] =temp
+            temp=data[i]
         
         
         
-# print(data)
+print(data)
 
 
 
@@ -107,45 +107,33 @@
 # L3 = copy(L)
 
 
+# def abc(a):
+#     a[0] = 10
+
+# def xyz(b):
+#     b[0] = 10
+#     return b
 
 
+# def calc():
+#     c = [1, 2, 3]
+#     d = [1, 2, 3]
+
+#     abc(c)
+#     d = xyz(d)
+ 
+#     print(c, d)
+
+# calc()
+
+# def swap(a, b):
+#     a, b = b, a
 
 
+# a, b = [1], [0]
 
-
-
-    
-    
-
-      
-     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# swap(a, b)
+# print(a, b)
 
 
 
