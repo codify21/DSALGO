@@ -24,6 +24,7 @@ class Solution:
                 return
             
             for i in range(len(start)):#looping all values
+    
                 temp=copy.deepcopy(start)
                 comb.append(start[i])
                 temp.remove(start[i])
