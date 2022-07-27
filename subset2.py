@@ -9,7 +9,39 @@ Created on Tue Dec 28 21:19:03 2021
 # https://leetcode.com/problems/subsets/
 from typing import List
 
-# class Solution:
+# https://www.youtube.com/watch?v=Vn2v6ajA7U0
+# Time Complexity ::  n*(2^n). (length of subset* total subsets)
+class Solution:
+    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+        
+        res=[]
+        nums.sort()
+        # subset=[]
+        
+        def dfs(i,subset):
+            
+            if i>=len(nums):
+                res.append(subset.copy())
+                return
+            
+            #decision to include nums[i]
+            subset.append(nums[i])
+            dfs(i+1,subset)
+            subset.pop()
+            
+            #decision NOT to include nums[i]
+            
+            while i+1<len(nums) and nums[i]==nums[i+1]:
+                i=i+1
+            dfs(i+1,subset)
+            
+        dfs(0,[])
+    
+        return res
+    
+# This below code is using set in the end that's why it is not preffered solution
+# https://leetcode.com/problems/subsets/
+    
 #     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
         
 #         res=[]
@@ -20,9 +52,11 @@ from typing import List
 #             if i==len(nums):
 #                 res.append(sorted(subset.copy()))
 #                 return
+
 #             #decision to include nums[i]
 #             subset.append(nums[i])
 #             dfs(i+1)
+
 #             #decision NOT to include nums[i]
 #             subset.pop()
 #             dfs(i+1)
@@ -31,38 +65,10 @@ from typing import List
 #         res=set(map(tuple, res))
 #         # res=list(map(list, res))
 #         return res
-    
-# sol1 = Solution()
-# output = sol1.subsetsWithDup([4,4,4,1,4])
 
-# print (output)
-class Solution:
- 
-    def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-        
-        res=[]
-        nums.sort()
-        subset=[]
-        
-        def dfs(i):
-            
-            if i==len(nums):
-                res.append(subset.copy())
-                return
-            
-            #decision to include nums[i]
-            subset.append(nums[i])
-            dfs(i+1)
-            
-            #decision NOT to include nums[i]
-            subset.pop()
-            while i+1<len(nums) and nums[i]==nums[i+1]:
-                i=i+1
-            dfs(i+1)
-            
-        dfs(0)
     
-        return res
+    
+        
 
     
 sol1 = Solution()
