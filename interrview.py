@@ -80,3 +80,61 @@
 # print(data)
 
 
+
+
+
+
+data=[-5, -23, 5, 0, 23, -6, 23, 67]
+
+def swap(data,i,j):
+    temp = data[i]
+    data[i]=data[j]
+    data[j]=temp
+    
+
+
+def sorting(nums):
+    
+    
+    for i in range(len(nums)):
+        
+        j=i
+        
+        while j>0 and nums[j-1]>nums[j]:
+            swap(nums,j,j-1)
+            j=j-1
+
+    return nums    
+
+
+second=sorting(data)
+print("Sorted list is ",second)
+
+
+
+# names = Employee.objects.filter(Q(name__startswith="s")|Q(name__endswith='y'))
+
+
+# Table1 =  Employee  ,  TABLE2 = Order
+
+# select Employee.name , Order.value
+# from Employee inner join Order on Employee.empcode = Order.empcode
+
+
+
+# class Post:
+#     posts=models.CharField()
+    
+# Class Users:
+#     name = 
+#     email = models
+#     posts = models.ForeignKey(Post,null =True)
+    
+    
+
+# posts = User.objects.filter(post)
+
+
+
+
+
