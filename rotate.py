@@ -11,7 +11,8 @@ Created on Mon Nov 22 00:49:15 2021
 
 class Solution:
      def rotate(self, nums,k):
-         k=k%len(nums)        
+         k=k%len(nums)   
+         
          var = nums[-k:]
          print(var)
          if k==0:
@@ -21,7 +22,9 @@ class Solution:
                  swap(nums,j,j+k)
              nums[0:k]=var
              print(nums)
-
+             
+         # nums[:] = nums[-k:] + nums[:-k] One line solution
+         
 def swap(nums,i,j):
     temp=nums[i]
     nums[i]=nums[j]

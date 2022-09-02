@@ -84,31 +84,31 @@
 
 
 
-data=[-5, -23, 5, 0, 23, -6, 23, 67]
+# data=[-5, -23, 5, 0, 23, -6, 23, 67]
 
-def swap(data,i,j):
-    temp = data[i]
-    data[i]=data[j]
-    data[j]=temp
+# def swap(data,i,j):
+#     temp = data[i]
+#     data[i]=data[j]
+#     data[j]=temp
     
 
 
-def sorting(nums):
+# def sorting(nums):
     
     
-    for i in range(len(nums)):
+#     for i in range(len(nums)):
         
-        j=i
+#         j=i
         
-        while j>0 and nums[j-1]>nums[j]:
-            swap(nums,j,j-1)
-            j=j-1
+#         while j>0 and nums[j-1]>nums[j]:
+#             swap(nums,j,j-1)
+#             j=j-1
 
-    return nums    
+#     return nums    
 
 
-second=sorting(data)
-print("Sorted list is ",second)
+# second=sorting(data)
+# print("Sorted list is ",second)
 
 
 
@@ -138,4 +138,18 @@ print("Sorted list is ",second)
 
 
         
+
+for i in range(5):
+    
+    for j in range(4-i,0,-1):
+        
+        print(" ",end="")
+    d= "* "*i
+    print(d)
+
+
+
+
+
+
 
