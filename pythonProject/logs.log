@@ -1,0 +1,33 @@
+2021-07-11 02:11:39,249 Starting new HTTPS connection (1): developer.mozilla.org:443
+2021-07-11 02:11:39,365 https://developer.mozilla.org:443 "GET /en-US/docs/Web/HTTP/Status/400 HTTP/1.1" 200 None
+2021-07-11 02:11:39,379 Starting new HTTPS connection (1): developer.mozilla.org:443
+2021-07-11 02:11:40,004 https://developer.mozilla.org:443 "GET /en-US/docs/Web/HTTP/Status/4000 HTTP/1.1" 404 None
+2021-07-11 02:11:40,187 Site is down 
+2021-07-11 02:11:40,192 Starting new HTTPS connection (1): blog.datalust.co:443
+2021-07-11 02:11:40,926 https://blog.datalust.co:443 "GET /simple-health-checks-for-any-url/ HTTP/1.1" 200 6565
+2021-07-11 02:11:41,063 Starting new HTTPS connection (1): www.austreme.com:443
+2021-07-11 02:11:42,848 https://www.austreme.com:443 "GET /en/brand-monitoring/ HTTP/1.1" 200 None
+2021-07-11 02:12:15,946 Site is down 
+2021-07-11 02:12:32,963 Site is down 
+2021-07-11 05:18:37,302 Site is not accessible  https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2021-07-11 05:18:38,623 Site is not accessible https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4000
+2021-07-11 05:18:39,443 Site is not accessible https://blog.datalust.co/simple-health-checks-for-any-url/
+2021-07-11 05:18:41,798 Site is not accessible https://www.austreme.com/en/brand-monitoring/
+2021-07-11 05:21:32,134 Site is not accessible  https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400
+2021-07-11 05:21:32,957 Site is not accessible https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4000
+2021-07-11 05:21:33,731 Site is not accessible https://blog.datalust.co/simple-health-checks-for-any-url/
+2021-07-11 05:21:36,085 Site is not accessible https://www.austreme.com/en/brand-monitoring/
+2021-07-11 05:23:48,357 Site is down 
+2021-07-11 22:37:47,555 Site is not accessible http://172.168.0.3:9800/
+2021-07-11 22:40:08,926 Site is not accessible http://172.168.0.3:9800/
+2021-07-11 22:42:29,379 Site is not accessible http://172.168.0.3:9800/
+2021-07-12 02:11:40,580 Site is not accessible http://172.168.0.3:9800/
+2021-07-12 02:13:58,462 Site is not accessible http://172.168.0.3:9800/
+2021-07-12 02:13:59,417 Site is down https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4000
+2021-07-12 02:15:04,778 Site is not accessible http://172.168.0.3:9800/
+2021-07-12 02:15:05,586 Site is down https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4000
+2021-07-12 02:15:08,914 Site is not accessible https://www.austreme.com/en/brand-monitoring/
+2021-07-12 02:16:10,988 Site is not accessible http://172.168.0.3:9800/
+2021-07-12 02:16:11,792 Site is down https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4000
+2021-07-12 02:17:17,132 Site is not accessible http://172.168.0.3:9800/
+2021-07-12 02:17:17,943 Site is down https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/4000
